@@ -74,9 +74,9 @@
 </head>
 <body class="bg-[#0b0f19] text-slate-100 h-[100dvh] w-screen flex flex-col justify-between antialiased selection:bg-cyan-500 selection:text-black overflow-hidden pb-[calc(4rem+env(safe-area-inset-bottom))]">
 
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800/80 shrink-0">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800/80 shrink-0 h-14 sm:h-16 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-center md:justify-between">
+            <div class="hidden md:flex items-center space-x-3">
                 <span class="font-black text-lg sm:text-xl tracking-tight text-white block">펌프티콘 <span class="text-cyan-400 text-xs sm:text-sm font-semibold ml-1">PUMP.T.CON</span></span>
             </div>
 
@@ -103,523 +103,546 @@
         <div id="horizontalSlider" class="flex w-[600%] h-full flex-1 transition-transform duration-300 ease-out select-none">
             
             <!-- SECTION 1: 펌프티콘은? -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center pt-3 sm:pt-6 px-4 overflow-y-auto no-scrollbar flex-shrink-0">
-                <div class="max-w-4xl w-full mx-auto text-center relative z-10 pb-16">
-                    <div class="flex justify-center mb-3">
-                        <img src="img/pumptcon_icon.png" alt="펌프티콘 아이콘" class="w-16 sm:w-28 h-auto object-cover rounded-none cursor-pointer transition duration-300 hover:scale-105" onclick="openLightbox('img/pumptcon_icon.png', '펌프티콘 아이콘')" onerror="this.src='https://placehold.co/240x240/111827/06b6d4?text=PUMP.T.CON'">
-                    </div>
+            <section class="w-[16.666667%] h-full flex flex-col justify-between pt-2 pb-4 px-4 overflow-hidden flex-shrink-0">
+                <div class="h-4 shrink-0"></div> <!-- Top spacer -->
+                <div class="flex-1 flex flex-col items-center justify-start overflow-hidden my-auto w-full pt-1">
+                    <div class="max-w-4xl w-full mx-auto flex flex-col items-center justify-start h-full max-h-full">
+                        <div class="flex justify-center mb-2 shrink-0">
+                            <img src="img/pumptcon_icon.png" alt="펌프티콘 아이콘" class="w-14 sm:w-24 h-auto object-cover rounded-none cursor-pointer transition duration-300 hover:scale-105" onclick="openLightbox('img/pumptcon_icon.png', '펌프티콘 아이콘')" onerror="this.src='https://placehold.co/240x240/111827/06b6d4?text=PUMP.T.CON'">
+                        </div>
 
-                    <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-4 sm:p-7 text-left shadow-2xl space-y-2.5 sm:space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        펌프잇업 터치 컨트롤러(Pump it up Touch Controller)로 이름이 너무 길기 때문에 줄여서 <strong class="text-cyan-400 font-bold">펌프티콘(PUMP.T.CON)</strong>입니다.
-                        <br><br>
-                        펌프티콘은 안드로이드 기반 스마트폰과 태블릿 PC를 터치 기반 컨트롤러로 만들어주는 모바일 기기 기반의 터치 컨트롤러로 키보드를 대신할 새로운 조작 시스템입니다.
-                        <br><br>
-                        아직은 개발 단계의 앱으로 윈도용 펌프 잇 업 라이즈 스팀 게임의 플레이를 지원하는 최초의 소프트웨어 기반 컨트롤러입니다.
-                        <br><br>
-                        간단히 설명드려서 시중에 손펌콘으로 판매가 되고 있는 제품을 모바일 앱 방식으로 구현했다고 보시면 됩니다.
-                        <br><br>
-                        키보드를 거치지 않고도 앱 안에서 펌프 잇 업 라이즈의 모든 조작이 가능하도록 만들어졌습니다.
+                        <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-3.5 sm:p-6 text-left shadow-2xl space-y-2 sm:space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed overflow-y-auto no-scrollbar max-h-[calc(100vh-14rem)] w-full">
+                            펌프잇업 터치 컨트롤러(Pump it up Touch Controller)로 이름이 너무 길기 때문에 줄여서 <strong class="text-cyan-400 font-bold">펌프티콘(PUMP.T.CON)</strong>입니다.
+                            <br><br>
+                            펌프티콘은 안드로이드 기반 스마트폰과 태블릿 PC를 터치 기반 컨트롤러로 만들어주는 모바일 기기 기반의 터치 컨트롤러로 키보드를 대신할 새로운 조작 시스템입니다.
+                            <br><br>
+                            아직은 개발 단계의 앱으로 윈도용 펌프 잇 업 라이즈 스팀 게임의 플레이를 지원하는 최초의 소프트웨어 기반 컨트롤러입니다.
+                            <br><br>
+                            간단히 설명드려서 시중에 손펌콘으로 판매가 되고 있는 제품을 모바일 앱 방식으로 구현했다고 보시면 됩니다.
+                            <br><br>
+                            키보드를 거치지 않고도 앱 안에서 펌프 잇 업 라이즈의 모든 조작이 가능하도록 만들어졌습니다.
+                        </div>
                     </div>
                 </div>
+                <div class="h-8 shrink-0"></div> <!-- Bottom spacer for layout balance -->
             </section>
 
             <!-- SECTION 2: 개발 스토리 -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center pt-3 sm:pt-6 px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0">
-                <div class="max-w-4xl w-full mx-auto pb-16">
-                    <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-4 sm:p-7 text-left shadow-2xl space-y-2.5 sm:space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed">                    
-                        펌프 잇 업 라이즈의 게임 플레이가 키보드를 기반으로 진행이 되는데 키보드로 누르기에는 키가 작은 감이 있습니다.
-                        <br><br>
-                        적응하면 무리가 없긴 하겠지만 키보드 배열이 대각선 사선 구조라서 펌프 잇 업의 형태의 게임을 플레이하기에는 조작이 애매하다는 생각이 들었습니다.
-                        <br><br>
-                        손펌프콘이라는 형태로 시중에 판매되는 PC용 컨트롤러가 있지만 가격이 15~20만 원 사이에 높은 가격대가 형성되어 있기도 하고 부피가 생각보다 크기도 하고 버튼을 누를 때 소음이 있다는 부분도 있습니다.
-                        <br><br>
-                        안다미로에서도 펌프 잇 업 라이즈 전용 컨트롤러 정식 출시가 예정되어 키도 하기는 아직 정식 출시 전이기도 하고 새로운 형태의 컨트롤러를 만들어 보고 싶어서 AI의 도움을 받아서 모바일 앱 방식으로 제작을 하고 있습니다.
-                        <br><br>
-                        아직은 개발 중인 베타 테스트 단계로 정식 공개된 버전은 없습니다.
+            <section class="w-[16.666667%] h-full flex flex-col justify-between pt-2 pb-4 px-4 overflow-hidden bg-[#090d16] flex-shrink-0">
+                <div class="h-4 shrink-0"></div>
+                <div class="flex-1 flex flex-col items-center justify-start overflow-hidden my-auto w-full pt-1">
+                    <div class="max-w-4xl w-full mx-auto flex flex-col items-center justify-start h-full max-h-full">
+                        <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-3.5 sm:p-6 text-left shadow-2xl space-y-2 sm:space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed overflow-y-auto no-scrollbar max-h-[calc(100vh-12rem)] w-full">                    
+                            펌프 잇 업 라이즈의 게임 플레이가 키보드를 기반으로 진행이 되는데 키보드로 누르기에는 키가 작은 감이 있습니다.
+                            <br><br>
+                            적응하면 무리가 없긴 하겠지만 키보드 배열이 대각선 사선 구조라서 펌프 잇 업의 형태의 게임을 플레이하기에는 조작이 애매하다는 생각이 들었습니다.
+                            <br><br>
+                            손펌프콘이라는 형태로 시중에 판매되는 PC용 컨트롤러가 있지만 가격이 15~20만 원 사이에 높은 가격대가 형성되어 있기도 하고 부피가 생각보다 크기도 하고 버튼을 누를 때 소음이 있다는 부분도 있습니다.
+                            <br><br>
+                            안다미로에서도 펌프 잇 업 라이즈 전용 컨트롤러 정식 출시가 예정되어 키도 하기는 아직 정식 출시 전이기도 하고 새로운 형태의 컨트롤러를 만들어 보고 싶어서 AI의 도움을 받아서 모바일 앱 방식으로 제작을 하고 있습니다.
+                            <br><br>
+                            아직은 개발 중인 베타 테스트 단계로 정식 공개된 버전은 없습니다.
+                        </div>
                     </div>
                 </div>
+                <div class="h-8 shrink-0"></div>
             </section>
 
             <!-- SECTION 3: 주요 기능 -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center pt-3 sm:pt-6 px-4 overflow-y-auto no-scrollbar bg-[#0d121f] flex-shrink-0">
-                <div class="max-w-3xl w-full mx-auto pb-16">
-                    <!-- Single stacked list structure -->
-                    <div class="flex flex-col space-y-2 max-h-[60vh] sm:max-h-[70vh] overflow-y-auto no-scrollbar pr-1">
-                        <!-- Feature 1 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-cyan-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
-                            <div class="flex items-center space-x-3 mb-1">
-                                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xs sm:text-sm font-black">
-                                    <i class="fa-solid fa-mobile-screen"></i>
+            <section class="w-[16.666667%] h-full flex flex-col justify-between pt-2 pb-4 px-4 overflow-hidden bg-[#0d121f] flex-shrink-0">
+                <div class="h-4 shrink-0"></div>
+                <div class="flex-1 flex flex-col items-center justify-start overflow-hidden my-auto w-full pt-1">
+                    <div class="max-w-3xl w-full mx-auto flex flex-col items-center justify-start h-full max-h-full">
+                        <div class="flex flex-col space-y-2 overflow-y-auto no-scrollbar pr-1 max-h-[calc(100vh-12rem)] w-full">
+                            <!-- Feature 1 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-cyan-500/50 rounded-2xl p-2.5 sm:p-3 transition duration-300 shadow-lg">
+                                <div class="flex items-center space-x-3 mb-1">
+                                    <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xs sm:text-sm font-black">
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                    </div>
+                                    <h3 class="text-xs sm:text-base font-bold text-white">모바일 최적화</h3>
                                 </div>
-                                <h3 class="text-xs sm:text-base font-bold text-white">모바일 최적화</h3>
+                                <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                    앱 실행 시 가로 화면 고정, 기본 UI 숨김, 화면 꺼짐 방지 및 직관적이고 편안한 UI 제공.
+                                </p>
                             </div>
-                            <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                앱 실행 시 가로 화면 고정, 기본 UI 숨김, 화면 꺼짐 방지 및 직관적이고 편안한 UI 제공.
-                            </p>
-                        </div>
 
-                        <!-- Feature 2 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-amber-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
-                            <div class="flex items-center space-x-3 mb-1">
-                                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xs sm:text-sm font-black">
-                                    <i class="fa-solid fa-gamepad"></i>
+                            <!-- Feature 2 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-amber-500/50 rounded-2xl p-2.5 sm:p-3 transition duration-300 shadow-lg">
+                                <div class="flex items-center space-x-3 mb-1">
+                                    <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xs sm:text-sm font-black">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                    </div>
+                                    <h3 class="text-xs sm:text-base font-bold text-white">다중 게임 모드 및 버전 지원</h3>
                                 </div>
-                                <h3 class="text-xs sm:text-base font-bold text-white">다중 게임 모드 및 버전 지원</h3>
+                                <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                    싱글 1P/2P, 하프, 더블 모드 지원 및 각 모드별 4가지 버튼 배열 스타일 제공.
+                                </p>
                             </div>
-                            <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                싱글 1P/2P, 하프, 더블 모드 지원 및 각 모드별 4가지 버튼 배열 스타일 제공.
-                            </p>
-                        </div>
 
-                        <!-- Feature 3 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-blue-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
-                            <div class="flex items-center space-x-3 mb-1">
-                                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xs sm:text-sm font-black">
-                                    <i class="fa-solid fa-qrcode"></i>
+                            <!-- Feature 3 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-blue-500/50 rounded-2xl p-2.5 sm:p-3 transition duration-300 shadow-lg">
+                                <div class="flex items-center space-x-3 mb-1">
+                                    <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xs sm:text-sm font-black">
+                                        <i class="fa-solid fa-qrcode"></i>
+                                    </div>
+                                    <h3 class="text-xs sm:text-base font-bold text-white">PC 간편 연결</h3>
                                 </div>
-                                <h3 class="text-xs sm:text-base font-bold text-white">PC 간편 연결</h3>
+                                <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                    PC 리시버와 QR 코드 인식으로 즉시 연결. 최초 1회 키 설정으로 바로 게임 플레이 가능.
+                                </p>
                             </div>
-                            <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                PC 리시버와 QR 코드 인식으로 즉시 연결. 최초 1회 키 설정으로 바로 게임 플레이 가능.
-                            </p>
-                        </div>
 
-                        <!-- Feature 4 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-purple-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
-                            <div class="flex items-center space-x-3 mb-1">
-                                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xs sm:text-sm font-black">
-                                    <i class="fa-solid fa-hand-pointer"></i>
+                            <!-- Feature 4 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-purple-500/50 rounded-2xl p-2.5 sm:p-3 transition duration-300 shadow-lg">
+                                <div class="flex items-center space-x-3 mb-1">
+                                    <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xs sm:text-sm font-black">
+                                        <i class="fa-solid fa-hand-pointer"></i>
+                                    </div>
+                                    <h3 class="text-xs sm:text-base font-bold text-white">멀티터치 및 터치 진동</h3>
                                 </div>
-                                <h3 class="text-xs sm:text-base font-bold text-white">멀티터치 및 터치 진동</h3>
+                                <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                    동시 누르기, 롱노드 길게 누르기 지원 및 지속적인 터치 진동 피드백 제공.
+                                </p>
                             </div>
-                            <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                동시 누르기, 롱노드 길게 누르기 지원 및 지속적인 터치 진동 피드백 제공.
-                            </p>
-                        </div>
 
-                        <!-- Feature 5 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-emerald-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
-                            <div class="flex items-center space-x-3 mb-1">
-                                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xs sm:text-sm font-black">
-                                    <i class="fa-solid fa-palette"></i>
+                            <!-- Feature 5 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-emerald-500/50 rounded-2xl p-2.5 sm:p-3 transition duration-300 shadow-lg">
+                                <div class="flex items-center space-x-3 mb-1">
+                                    <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xs sm:text-sm font-black">
+                                        <i class="fa-solid fa-palette"></i>
+                                    </div>
+                                    <h3 class="text-xs sm:text-base font-bold text-white">버튼 및 테마 색상</h3>
                                 </div>
-                                <h3 class="text-xs sm:text-base font-bold text-white">버튼 및 테마 색상</h3>
+                                <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                    단색 / 네온 / 믹스 3가지 버튼 색상과 기본 다크 / 아케이드 / 네온 / 라이트 아케이드 4가지 테마 색상을 제공하여 사용자에게 맞는 시각적 효과를 제공.
+                                </p>
                             </div>
-                            <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                단색 / 네온 / 믹스 3가지 버튼 색상과 기본 다크 / 아케이드 / 네온 / 라이트 아케이드 4가지 테마 색상을 제공하여 사용자에게 맞는 시각적 효과를 제공.
-                            </p>
-                        </div>
 
-                        <!-- Feature 6: 맞춤 키 설정 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-indigo-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
-                            <div class="flex items-center space-x-3 mb-1">
-                                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xs sm:text-sm font-black">
-                                    <i class="fa-solid fa-sliders"></i>
+                            <!-- Feature 6: 맞춤 키 설정 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-indigo-500/50 rounded-2xl p-2.5 sm:p-3 transition duration-300 shadow-lg">
+                                <div class="flex items-center space-x-3 mb-1">
+                                    <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xs sm:text-sm font-black">
+                                        <i class="fa-solid fa-sliders"></i>
+                                    </div>
+                                    <h3 class="text-xs sm:text-base font-bold text-white">맞춤 키 설정</h3>
                                 </div>
-                                <h3 class="text-xs sm:text-base font-bold text-white">맞춤 키 설정</h3>
+                                <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                    5키 / 6키 / 10키 개별 키 설정 및 각 버튼에 커스텀 이미지 등록 가능.
+                                </p>
                             </div>
-                            <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                5키 / 6키 / 10키 개별 키 설정 및 각 버튼에 커스텀 이미지 등록 가능.
-                            </p>
-                        </div>
 
-                        <!-- Feature 7: 라이즈 전용 키패드 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-rose-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
-                            <div class="flex items-center space-x-3 mb-1">
-                                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 text-xs sm:text-sm font-black">
-                                    <i class="fa-solid fa-keyboard"></i>
+                            <!-- Feature 7: 라이즈 전용 키패드 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-rose-500/50 rounded-2xl p-2.5 sm:p-3 transition duration-300 shadow-lg">
+                                <div class="flex items-center space-x-3 mb-1">
+                                    <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 text-xs sm:text-sm font-black">
+                                        <i class="fa-solid fa-keyboard"></i>
+                                    </div>
+                                    <h3 class="text-xs sm:text-base font-bold text-white">라이즈 전용 키패드</h3>
                                 </div>
-                                <h3 class="text-xs sm:text-base font-bold text-white">라이즈 전용 키패드</h3>
+                                <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                    펌프 잇 업 라이즈에 필요한 모든 키를 탑재하여 키보드 없이 모든 조작 가능.
+                                </p>
                             </div>
-                            <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                펌프 잇 업 라이즈에 필요한 모든 키를 탑재하여 키보드 없이 모든 조작 가능.
-                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="h-8 shrink-0"></div>
             </section>
 
             <!-- SECTION 4: 세부 기능 -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center pt-3 sm:pt-6 px-4 overflow-y-auto no-scrollbar bg-[#0b0f19] flex-shrink-0">
-                <div class="max-w-3xl w-full mx-auto pb-16">
-                    <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-4 sm:p-7 text-left shadow-2xl space-y-2 text-slate-300 text-[11px] sm:text-sm leading-relaxed max-h-[60vh] sm:max-h-[70vh] overflow-y-auto no-scrollbar pr-1">
-                        <ul class="space-y-2">
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>지원 게임 : 윈도우용 펌프 잇 업 라이즈 스팀 게임 지원 및 윈도우 기반 펌프 잇 업 스타일에 대부분 게임을 지원.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>3종 키 지원 : 5키 / 6키 10키 지원. (각각 개별 키 세팅이 가능.)</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>모바일 기기 전용 : 안드로이드 7.0 이상 스마트폰과 태블릿 PC를 지원.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>PC 자동 연결 : QR 코드 스캔해서 PC와 연결. (IP 주소가 변하지 않으면 다음번 사용 시 QR 스캔 없이 자동 연결.)</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>다양한 모드 지원 : 싱글 1P / 싱글 2P / 하프 / 더블 4가지 모드의 지원 및 4가지 버튼 배열을 지원.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>터치 지원 : 사용자가 버튼 누르는 것을 진동을 통해서 손끝으로 전달. (켜고/끄기 가능하나 무조건 켜는 것을 추천.)</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>롱노드 터치 지원 : 버튼을 누르는 순간부터 떼는 순간까지 누르는 것에 대하여 터치 진동을 전달.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>버튼 색상 선택 : 단색 - 버튼 안쪽에 색상 표시 / 네온 - 테두리에만 색상 표시 / 믹스 단색 + 네온 색상 표시</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>버튼 테마 지원 : 기본 다크 / 아케이드 / 네온 / 라이트 아케이드 4가지 테마 색상을 지원.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>버튼 이미지 설정 : 사용자가 원하는 이미지를 넣어서 버튼으로 꾸밀 수 있음.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>라이즈 키패드 : 라이즈 게임에 필요한 모든 키를 앱안에서 사용 가능. (키보드 없이 모든 조작 가능.)</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>볼륨 조절 : 윈도우 시스템 볼륨을 조절 가능.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-cyan-400 font-bold">•</span>
-                                <span>자동 실행 & 종료 : 라이즈 앱을 자동으로 실행하고 종료까지 앱안에서 모두 가능.</span>
-                            </li>
-                        </ul>
+            <section class="w-[16.666667%] h-full flex flex-col justify-between pt-2 pb-4 px-4 overflow-hidden bg-[#0b0f19] flex-shrink-0">
+                <div class="h-4 shrink-0"></div>
+                <div class="flex-1 flex flex-col items-center justify-start overflow-hidden my-auto w-full pt-1">
+                    <div class="max-w-3xl w-full mx-auto flex flex-col items-center justify-start h-full max-h-full">
+                        <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-3.5 sm:p-6 text-left shadow-2xl space-y-2 text-slate-300 text-[11px] sm:text-sm leading-relaxed overflow-y-auto no-scrollbar max-h-[calc(100vh-12rem)] w-full">
+                            <ul class="space-y-2">
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>지원 게임 : 윈도우용 펌프 잇 업 라이즈 스팀 게임 지원 및 윈도우 기반 펌프 잇 업 스타일에 대부분 게임을 지원.</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>3종 키 지원 : 5키 / 6키 10키 지원. (각각 개별 키 세팅이 가능.)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>모바일 기기 전용 : 안드로이드 7.0 이상 스마트폰과 태블릿 PC를 지원.</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>PC 자동 연결 : QR 코드 스캔해서 PC와 연결. (IP 주소가 변하지 않으면 다음번 사용 시 QR 스캔 없이 자동 연결.)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>다양한 모드 지원 : 싱글 1P / 싱글 2P / 하프 / 더블 4가지 모드의 지원 및 4가지 버튼 배열을 지원.</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>터치 지원 : 사용자가 버튼 누르는 것을 진동을 통해서 손끝으로 전달. (켜고/끄기 가능하나 무조건 켜는 것을 추천.)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>롱노드 터치 지원 : 버튼을 누르는 순간부터 떼는 순간까지 누르는 것에 대하여 터치 진동을 전달.</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>버튼 색상 선택 : 단색 - 버튼 안쪽에 색상 표시 / 네온 - 테두리에만 색상 표시 / 믹스 단색 + 네온 색상 표시</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>버튼 테마 지원 : 기본 다크 / 아케이드 / 네온 / 라이트 아케이드 4가지 테마 색상을 지원.</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>버튼 이미지 설정 : 사용자가 원하는 이미지를 넣어서 버튼으로 꾸밀 수 있음.</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>라이즈 키패드 : 라이즈 게임에 필요한 모든 키를 앱안에서 사용 가능. (키보드 없이 모든 조작 가능.)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>볼륨 조절 : 윈도우 시스템 볼륨을 조절 가능.</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-cyan-400 font-bold">•</span>
+                                    <span>자동 실행 & 종료 : 라이즈 앱을 자동으로 실행하고 종료까지 앱안에서 모두 가능.</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="h-8 shrink-0"></div>
             </section>
 
             <!-- SECTION 5: 미리보기 이미지 (34 Images) -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center pt-2 sm:pt-4 px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0">
-                <div class="max-w-xl w-full mx-auto pb-16">
-                    <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-3 sm:p-5 text-left shadow-2xl flex flex-col items-center">
-                        <!-- Carousel Wrapper -->
-                        <div id="carouselContainer" class="w-full relative flex items-center justify-center min-h-[170px] sm:min-h-[220px]">
-                            <!-- Carousel Items (34 Images) -->
-                            <div class="carousel-item w-full flex flex-col items-center justify-center transition-all duration-300" data-index="0">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview00.png', '앱 실행 및 메인 화면')">
-                                    <img src="img/Preview00.png" alt="미리보기 1" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+01'">
+            <section class="w-[16.666667%] h-full flex flex-col justify-between pt-2 pb-4 px-4 overflow-hidden bg-[#090d16] flex-shrink-0">
+                <div class="h-2 shrink-0"></div>
+                <div class="flex-1 flex flex-col items-center justify-start overflow-hidden my-auto w-full pt-1">
+                    <div class="max-w-xl w-full mx-auto flex flex-col items-center justify-start h-full max-h-full">
+                        <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-3 sm:p-5 text-left shadow-2xl flex flex-col items-center w-full">
+                            <!-- Carousel Wrapper -->
+                            <div id="carouselContainer" class="w-full relative flex items-center justify-center min-h-[160px] sm:min-h-[220px]">
+                                <!-- Carousel Items (34 Images) -->
+                                <div class="carousel-item w-full flex flex-col items-center justify-center transition-all duration-300" data-index="0">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview00.png', '앱 실행 및 메인 화면')">
+                                        <img src="img/Preview00.png" alt="미리보기 1" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+01'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 앱 실행 및 메인 화면 -</h4>
                                 </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 앱 실행 및 메인 화면 -</h4>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="1">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview01.png', 'QR 코드 연동 화면')">
+                                        <img src="img/Preview01.png" alt="미리보기 2" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+02'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- QR 코드 연동 화면 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="2">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview02.png', '게임 모드 선택 화면')">
+                                        <img src="img/Preview02.png" alt="미리보기 3" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+03'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 게임 모드 선택 화면 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="3">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview03.png', '버튼 세팅 설정 화면')">
+                                        <img src="img/Preview03.png" alt="미리보기 4" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+04'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 세팅 설정 화면 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="4">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview04.png', '버튼 설정 : 편집 모드')">
+                                        <img src="img/Preview04.png" alt="미리보기 5" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+05'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 설정 : 편집 모드 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="5">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview05.png', '테마 및 색상 설정 화면')">
+                                        <img src="img/Preview05.png" alt="미리보기 6" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+06'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 테마 및 색상 설정 화면 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="6">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview06.png', '라이즈 키패드 컨트롤러')">
+                                        <img src="img/Preview06.png" alt="미리보기 7" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+07'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 라이즈 키패드 컨트롤러 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="7">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview07.png', '시스템 볼륨 조절 화면')">
+                                        <img src="img/Preview07.png" alt="미리보기 8" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+08'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 시스템 볼륨 조절 화면 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="8">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview08.png', '싱글 1P & 2P 모드 선택 화면')">
+                                        <img src="img/Preview08.png" alt="미리보기 9" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+09'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 선택 화면 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="9">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview09.png', '싱글 1P & 2P 모드 / 버전 1 버튼 배열')">
+                                        <img src="img/Preview09.png" alt="미리보기 10" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+10'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 / 버전 1 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="10">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview10.png', '싱글 1P & 2P 모드 / 버전 2 버튼 배열')">
+                                        <img src="img/Preview10.png" alt="미리보기 11" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+11'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 / 버전 2 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="11">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview11.png', '싱글 1P & 2P 모드 / 버전 3 버튼 배열')">
+                                        <img src="img/Preview11.png" alt="미리보기 12" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+12'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 / 버전 3 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="12">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview12.png', '싱글 1P & 2P 모드 / 버전 4 버튼 배열')">
+                                        <img src="img/Preview12.png" alt="미리보기 13" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+13'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 / 버전 4 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="13">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview13.png', '하프 모드 선택 화면')">
+                                        <img src="img/Preview13.png" alt="미리보기 14" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+14'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 선택 화면 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="14">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview14.png', '하프 모드 / 버전 1 버튼 배열')">
+                                        <img src="img/Preview14.png" alt="미리보기 15" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+15'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 / 버전 1 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="15">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview15.png', '하프 모드 / 버전 2 버튼 배열')">
+                                        <img src="img/Preview15.png" alt="미리보기 16" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+16'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 / 버전 2 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="16">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview16.png', '하프 모드 / 버전 3 버튼 배열')">
+                                        <img src="img/Preview16.png" alt="미리보기 17" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+17'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 / 버전 3 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="17">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview17.png', '하프 모드 / 버전 4 버튼 배열')">
+                                        <img src="img/Preview17.png" alt="미리보기 18" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+18'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 / 버전 4 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="18">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview18.png', '더블 모드 선택 화면')">
+                                        <img src="img/Preview18.png" alt="미리보기 19" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+19'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 선택 화면 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="19">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview19.png', '더블 모드 / 버전 1 버튼 배열')">
+                                        <img src="img/Preview19.png" alt="미리보기 20" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+20'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 / 버전 1 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="20">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview20.png', '더블 모드 / 버전 2 버튼 배열')">
+                                        <img src="img/Preview20.png" alt="미리보기 21" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+21'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 / 버전 2 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="21">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview21.png', '더블 모드 / 버전 3 버튼 배열')">
+                                        <img src="img/Preview21.png" alt="미리보기 22" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+22'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 / 버전 3 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="22">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview22.png', '더블 모드 / 버전 4 버튼 배열')">
+                                        <img src="img/Preview22.png" alt="미리보기 23" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+23'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 / 버전 4 버튼 배열 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="23">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview23.png', '버튼 누르기 전 기본 버튼')">
+                                        <img src="img/Preview23.png" alt="미리보기 24" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+24'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 누르기 전 기본 버튼 -</h4>
+                                </div>
+                                
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="24">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview24.png', '버튼 누를 때 : 단색 색상 효과')">
+                                        <img src="img/Preview24.png" alt="미리보기 25" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+25'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 누를 때 : 단색 색상 효과 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="25">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview25.png', '버튼 누를 때 : 네온 색상 효과')">
+                                        <img src="img/Preview25.png" alt="미리보기 26" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+26'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 누를 때 : 네온 색상 효과 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="26">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview26.png', '버튼 누를 때 : 믹스 색상 효과')">
+                                        <img src="img/Preview26.png" alt="미리보기 27" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+27'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 누를 때 : 믹스 색상 효과 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="27">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview27.png', '추가 미리보기 28')">
+                                        <img src="img/Preview27.png" alt="미리보기 28" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+28'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 28 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="28">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview28.png', '추가 미리보기 29')">
+                                        <img src="img/Preview28.png" alt="미리보기 29" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+29'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 29 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="29">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview29.png', '추가 미리보기 30')">
+                                        <img src="img/Preview29.png" alt="미리보기 30" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+30'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 30 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="30">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview30.png', '추가 미리보기 31')">
+                                        <img src="img/Preview30.png" alt="미리보기 31" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+31'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 31 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="31">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview31.png', '추가 미리보기 32')">
+                                        <img src="img/Preview31.png" alt="미리보기 32" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+32'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 32 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="32">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview32.png', '추가 미리보기 33')">
+                                        <img src="img/Preview32.png" alt="미리보기 33" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+33'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 33 -</h4>
+                                </div>
+
+                                <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="33">
+                                    <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview33.png', '추가 미리보기 34')">
+                                        <img src="img/Preview33.png" alt="미리보기 34" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+34'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 34 -</h4>
+                                </div>
                             </div>
 
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="1">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview01.png', 'QR 코드 연동 화면')">
-                                    <img src="img/Preview01.png" alt="미리보기 2" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+02'">
+                            <!-- Navigation Controls for Carousel -->
+                            <div class="w-full flex items-center justify-between mt-1 pt-1 border-t border-slate-800">
+                                <button id="prevSlideBtn" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs flex items-center space-x-1 transition">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    <span>이전 사진</span>
+                                </button>
+                                
+                                <div id="slideIndicator" class="text-slate-400 font-medium text-xs">
+                                    1 / 34
                                 </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- QR 코드 연동 화면 -</h4>
-                            </div>
 
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="2">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview02.png', '게임 모드 선택 화면')">
-                                    <img src="img/Preview02.png" alt="미리보기 3" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+03'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 게임 모드 선택 화면 -</h4>
+                                <button id="nextSlideBtn" class="px-3 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs flex items-center space-x-1 transition">
+                                    <span>다음 사진</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
                             </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="3">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview03.png', '버튼 세팅 설정 화면')">
-                                    <img src="img/Preview03.png" alt="미리보기 4" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+04'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 세팅 설정 화면 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="4">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview04.png', '버튼 설정 : 편집 모드')">
-                                    <img src="img/Preview04.png" alt="미리보기 5" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+05'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 설정 : 편집 모드 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="5">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview05.png', '테마 및 색상 설정 화면')">
-                                    <img src="img/Preview05.png" alt="미리보기 6" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+06'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 테마 및 색상 설정 화면 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="6">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview06.png', '라이즈 키패드 컨트롤러')">
-                                    <img src="img/Preview06.png" alt="미리보기 7" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+07'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 라이즈 키패드 컨트롤러 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="7">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview07.png', '시스템 볼륨 조절 화면')">
-                                    <img src="img/Preview07.png" alt="미리보기 8" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+08'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 시스템 볼륨 조절 화면 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="8">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview08.png', '싱글 1P & 2P 모드 선택 화면')">
-                                    <img src="img/Preview08.png" alt="미리보기 9" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+09'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 선택 화면 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="9">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview09.png', '싱글 1P & 2P 모드 / 버전 1 버튼 배열')">
-                                    <img src="img/Preview09.png" alt="미리보기 10" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+10'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 / 버전 1 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="10">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview10.png', '싱글 1P & 2P 모드 / 버전 2 버튼 배열')">
-                                    <img src="img/Preview10.png" alt="미리보기 11" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+11'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 / 버전 2 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="11">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview11.png', '싱글 1P & 2P 모드 / 버전 3 버튼 배열')">
-                                    <img src="img/Preview11.png" alt="미리보기 12" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+12'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 / 버전 3 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="12">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview12.png', '싱글 1P & 2P 모드 / 버전 4 버튼 배열')">
-                                    <img src="img/Preview12.png" alt="미리보기 13" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+13'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 싱글 1P & 2P 모드 / 버전 4 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="13">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview13.png', '하프 모드 선택 화면')">
-                                    <img src="img/Preview13.png" alt="미리보기 14" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+14'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 선택 화면 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="14">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview14.png', '하프 모드 / 버전 1 버튼 배열')">
-                                    <img src="img/Preview14.png" alt="미리보기 15" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+15'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 / 버전 1 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="15">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview15.png', '하프 모드 / 버전 2 버튼 배열')">
-                                    <img src="img/Preview15.png" alt="미리보기 16" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+16'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 / 버전 2 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="16">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview16.png', '하프 모드 / 버전 3 버튼 배열')">
-                                    <img src="img/Preview16.png" alt="미리보기 17" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+17'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 / 버전 3 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="17">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview17.png', '하프 모드 / 버전 4 버튼 배열')">
-                                    <img src="img/Preview17.png" alt="미리보기 18" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+18'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 하프 모드 / 버전 4 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="18">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview18.png', '더블 모드 선택 화면')">
-                                    <img src="img/Preview18.png" alt="미리보기 19" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+19'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 선택 화면 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="19">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview19.png', '더블 모드 / 버전 1 버튼 배열')">
-                                    <img src="img/Preview19.png" alt="미리보기 20" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+20'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 / 버전 1 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="20">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview20.png', '더블 모드 / 버전 2 버튼 배열')">
-                                    <img src="img/Preview20.png" alt="미리보기 21" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+21'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 / 버전 2 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="21">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview21.png', '더블 모드 / 버전 3 버튼 배열')">
-                                    <img src="img/Preview21.png" alt="미리보기 22" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+22'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 / 버전 3 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="22">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview22.png', '더블 모드 / 버전 4 버튼 배열')">
-                                    <img src="img/Preview22.png" alt="미리보기 23" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+23'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 더블 모드 / 버전 4 버튼 배열 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="23">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview23.png', '버튼 누르기 전 기본 버튼')">
-                                    <img src="img/Preview23.png" alt="미리보기 24" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+24'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 누르기 전 기본 버튼 -</h4>
-                            </div>
-                            
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="24">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview24.png', '버튼 누를 때 : 단색 색상 효과')">
-                                    <img src="img/Preview24.png" alt="미리보기 25" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+25'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 누를 때 : 단색 색상 효과 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="25">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview25.png', '버튼 누를 때 : 네온 색상 효과')">
-                                    <img src="img/Preview25.png" alt="미리보기 26" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+26'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 누를 때 : 네온 색상 효과 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="26">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview26.png', '버튼 누를 때 : 믹스 색상 효과')">
-                                    <img src="img/Preview26.png" alt="미리보기 27" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+27'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 버튼 누를 때 : 믹스 색상 효과 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="27">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview27.png', '추가 미리보기 28')">
-                                    <img src="img/Preview27.png" alt="미리보기 28" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+28'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 28 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="28">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview28.png', '추가 미리보기 29')">
-                                    <img src="img/Preview28.png" alt="미리보기 29" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+29'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 29 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="29">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview29.png', '추가 미리보기 30')">
-                                    <img src="img/Preview29.png" alt="미리보기 30" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+30'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 30 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="30">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview30.png', '추가 미리보기 31')">
-                                    <img src="img/Preview30.png" alt="미리보기 31" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+31'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 31 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="31">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview31.png', '추가 미리보기 32')">
-                                    <img src="img/Preview31.png" alt="미리보기 32" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+32'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 32 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="32">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview32.png', '추가 미리보기 33')">
-                                    <img src="img/Preview32.png" alt="미리보기 33" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+33'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 33 -</h4>
-                            </div>
-
-                            <div class="carousel-item w-full hidden flex-col items-center justify-center transition-all duration-300" data-index="33">
-                                <div class="w-full border border-slate-700/80 rounded-xl overflow-hidden bg-[#090d16] p-1 mb-1.5 flex items-center justify-center shadow-lg cursor-pointer group" onclick="openLightbox('img/Preview33.png', '추가 미리보기 34')">
-                                    <img src="img/Preview33.png" alt="미리보기 34" class="w-full h-24 sm:h-36 object-contain rounded-lg transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/800x450/111827/06b6d4?text=Preview+34'">
-                                </div>
-                                <h4 class="text-white font-bold text-xs sm:text-sm">- 추가 미리보기 34 -</h4>
-                            </div>
-                        </div>
-
-                        <!-- Navigation Controls for Carousel -->
-                        <div class="w-full flex items-center justify-between mt-1 pt-1 border-t border-slate-800">
-                            <button id="prevSlideBtn" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs flex items-center space-x-1 transition">
-                                <i class="fa-solid fa-chevron-left"></i>
-                                <span>이전 사진</span>
-                            </button>
-                            
-                            <div id="slideIndicator" class="text-slate-400 font-medium text-xs">
-                                1 / 34
-                            </div>
-
-                            <button id="nextSlideBtn" class="px-3 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs flex items-center space-x-1 transition">
-                                <span>다음 사진</span>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
                         </div>
                     </div>
                 </div>
+                <div class="h-6 shrink-0"></div>
             </section>
 
             <!-- SECTION 6: 빠른 실행 가이드 -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center pt-3 sm:pt-6 px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0">
-                <div class="max-w-2xl w-full mx-auto pb-16">
-                    <div class="flex flex-col space-y-2.5 max-h-[60vh] sm:max-h-[70vh] overflow-y-auto no-scrollbar pr-1">
-                        <!-- Step 1 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-cyan-500/50 rounded-2xl p-3 sm:p-3.5 transition duration-300 shadow-lg flex items-center justify-between">
-                            <div class="flex items-center space-x-3.5">
-                                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-sm sm:text-base font-black shrink-0">
-                                    <i class="fa-solid fa-desktop"></i>
+            <section class="w-[16.666667%] h-full flex flex-col justify-between pt-2 pb-4 px-4 overflow-hidden bg-[#090d16] flex-shrink-0">
+                <div class="h-4 shrink-0"></div>
+                <div class="flex-1 flex flex-col items-center justify-start overflow-hidden my-auto w-full pt-1">
+                    <div class="max-w-2xl w-full mx-auto flex flex-col items-center justify-start h-full max-h-full">
+                        <div class="flex flex-col space-y-2.5 overflow-y-auto no-scrollbar pr-1 max-h-[calc(100vh-12rem)] w-full">
+                            <!-- Step 1 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-cyan-500/50 rounded-2xl p-3 sm:p-3.5 transition duration-300 shadow-lg flex items-center justify-between">
+                                <div class="flex items-center space-x-3.5">
+                                    <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-sm sm:text-base font-black shrink-0">
+                                        <i class="fa-solid fa-desktop"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs sm:text-base font-bold text-white mb-0.5">펌프티콘 리시버 실행</h3>
+                                        <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                            PC에서 펌프티콘 리시버 프로그램 실행.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="text-xs sm:text-base font-bold text-white mb-0.5">펌프티콘 리시버 실행</h3>
-                                    <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                        PC에서 펌프티콘 리시버 프로그램 실행.
-                                    </p>
-                                </div>
+                                <span class="text-[10px] sm:text-xs font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 shrink-0">STEP 1</span>
                             </div>
-                            <span class="text-[10px] sm:text-xs font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 shrink-0">STEP 1</span>
-                        </div>
 
-                        <!-- Step 2 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-amber-500/50 rounded-2xl p-3 sm:p-3.5 transition duration-300 shadow-lg flex items-center justify-between">
-                            <div class="flex items-center space-x-3.5">
-                                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-sm sm:text-base font-black shrink-0">
-                                    <i class="fa-solid fa-qrcode"></i>
+                            <!-- Step 2 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-amber-500/50 rounded-2xl p-3 sm:p-3.5 transition duration-300 shadow-lg flex items-center justify-between">
+                                <div class="flex items-center space-x-3.5">
+                                    <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-sm sm:text-base font-black shrink-0">
+                                        <i class="fa-solid fa-qrcode"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs sm:text-base font-bold text-white mb-0.5">QR 코드 태그</h3>
+                                        <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                            PC에 보이는 QR 코드를 태그.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="text-xs sm:text-base font-bold text-white mb-0.5">QR 코드 태그</h3>
-                                    <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                        PC에 보이는 QR 코드를 태그.
-                                    </p>
-                                </div>
+                                <span class="text-[10px] sm:text-xs font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 shrink-0">STEP 2</span>
                             </div>
-                            <span class="text-[10px] sm:text-xs font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 shrink-0">STEP 2</span>
-                        </div>
 
-                        <!-- Step 3 -->
-                        <div class="bg-[#111827] border border-slate-800/80 hover:border-emerald-500/50 rounded-2xl p-3 sm:p-3.5 transition duration-300 shadow-lg flex items-center justify-between">
-                            <div class="flex items-center space-x-3.5">
-                                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-sm sm:text-base font-black shrink-0">
-                                    <i class="fa-solid fa-play"></i>
+                            <!-- Step 3 -->
+                            <div class="bg-[#111827] border border-slate-800/80 hover:border-emerald-500/50 rounded-2xl p-3 sm:p-3.5 transition duration-300 shadow-lg flex items-center justify-between">
+                                <div class="flex items-center space-x-3.5">
+                                    <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-sm sm:text-base font-black shrink-0">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs sm:text-base font-bold text-white mb-0.5">버튼 설정 및 플레이</h3>
+                                        <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                                            게임에서 버튼 설정 및 플레이.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="text-xs sm:text-base font-bold text-white mb-0.5">버튼 설정 및 플레이</h3>
-                                    <p class="text-slate-300 text-[11px] sm:text-xs leading-relaxed">
-                                        게임에서 버튼 설정 및 플레이.
-                                    </p>
-                                </div>
+                                <span class="text-[10px] sm:text-xs font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">STEP 3</span>
                             </div>
-                            <span class="text-[10px] sm:text-xs font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">STEP 3</span>
                         </div>
                     </div>
                 </div>
+                <div class="h-8 shrink-0"></div>
             </section>
 
         </div>
@@ -628,7 +651,7 @@
 
     <footer class="fixed bottom-0 left-0 right-0 bg-[#070a12]/95 backdrop-blur-md border-t border-slate-800/80 py-2.5 sm:py-3 px-4 sm:px-8 flex items-center justify-between z-40 shrink-0 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
         <div class="flex items-center space-x-2">
-            <img src="img/pumptcon_icon.png" alt="펌프티콘 아이콘" class="w-6 h-6 object-cover rounded-lg block" onerror="this.src='https://placehold.co/80x80/111827/06b6d4?text=P'">
+            <img src="img/pumptcon_icon.png" alt="펌프티콘 아이콘" class="w-6 h-6 object-cover rounded-none block cursor-pointer" onclick="openLightbox('img/pumptcon_icon.png', '펌프티콘 아이콘')" onerror="this.src='https://placehold.co/80x80/111827/06b6d4?text=P'">
             <span class="font-bold text-slate-200 text-xs sm:text-sm">펌프티콘 (PUMP.T.CON)</span>
         </div>
 
