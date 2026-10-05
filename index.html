@@ -43,7 +43,7 @@
             padding: 0;
             height: 100vh;
             width: 100vw;
-            touch-action: pan-y; /* Allow vertical scrolling inside sections while enabling horizontal pointer swipes */
+            touch-action: pan-y;
         }
 
         .gradient-text {
@@ -52,7 +52,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Hide Scrollbars Globally */
         ::-webkit-scrollbar {
             display: none !important;
             width: 0px !important;
@@ -60,8 +59,8 @@
         }
         
         * {
-            -ms-overflow-style: none !important;  /* IE and Edge */
-            scrollbar-width: none !important;  /* Firefox */
+            -ms-overflow-style: none !important;
+            scrollbar-width: none !important;
         }
 
         .no-scrollbar::-webkit-scrollbar {
@@ -82,13 +81,14 @@
             </div>
 
             <!-- Desktop Header Links -->
-            <div class="hidden md:flex items-center space-x-1.5 bg-slate-900/90 border border-slate-800 p-1.5 rounded-2xl shadow-inner">
-                <button onclick="goToSection(0)" class="nav-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 text-cyan-400 bg-cyan-500/10 border border-cyan-500/30">1. 펌프티콘은?</button>
-                <button onclick="goToSection(1)" class="nav-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800">2. 개발 스토리</button>
-                <button onclick="goToSection(2)" class="nav-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800">3. 주요 기능</button>
-                <button onclick="goToSection(3)" class="nav-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800">4. 세부 기능</button>
-                <button onclick="goToSection(4)" class="nav-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800">5. 미리보기 이미지</button>
-                <button onclick="goToSection(5)" class="nav-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800">6. 빠른 실행 가이드</button>
+            <div class="hidden md:flex items-center space-x-1 bg-slate-900/90 border border-slate-800 p-1.5 rounded-2xl shadow-inner overflow-x-auto">
+                <button onclick="goToSection(0)" class="nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-cyan-400 bg-cyan-500/10 border border-cyan-500/30 whitespace-nowrap">1. 펌프티콘은?</button>
+                <button onclick="goToSection(1)" class="nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">2. 개발 스토리</button>
+                <button onclick="goToSection(2)" class="nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">3. 주요 기능</button>
+                <button onclick="goToSection(3)" class="nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">4. 세부 기능</button>
+                <button onclick="goToSection(4)" class="nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">5. 미리보기 이미지</button>
+                <button onclick="goToSection(5)" class="nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">6. 빠른 실행 가이드</button>
+                <button onclick="goToSection(6)" class="nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">7. 다운로드</button>
             </div>
 
             <!-- Mobile Current Section Title Indicator -->
@@ -100,11 +100,11 @@
 
     <main class="flex-1 relative overflow-hidden flex flex-col w-full">
         
-        <!-- Horizontal Swipe Container (600% width for 6 sections) -->
-        <div id="horizontalSlider" class="flex w-[600%] h-full flex-1 transition-transform duration-300 ease-out select-none cursor-grab active:cursor-grabbing">
+        <!-- Horizontal Swipe Container (700% width for 7 sections) -->
+        <div id="horizontalSlider" class="flex w-[700%] h-full flex-1 transition-transform duration-300 ease-out select-none cursor-grab active:cursor-grabbing">
             
             <!-- SECTION 1: 펌프티콘은? -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar flex-shrink-0 pt-4 pb-4">
+            <section class="w-[14.2857%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar flex-shrink-0 pt-4 pb-4">
                 <div class="max-w-4xl w-full mx-auto text-center relative z-10">
                     <div class="flex justify-center mb-3">
                         <img src="img/pumptcon_icon.png" alt="펌프티콘 아이콘" class="w-16 sm:w-28 h-auto object-cover rounded-none cursor-pointer transition duration-300 hover:scale-105" onclick="openLightbox('img/pumptcon_icon.png', '펌프티콘 아이콘')" onerror="this.src='https://placehold.co/240x240/111827/06b6d4?text=PUMP.T.CON'">
@@ -125,7 +125,7 @@
             </section>
 
             <!-- SECTION 2: 개발 스토리 -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0 pt-4 pb-4">
+            <section class="w-[14.2857%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0 pt-4 pb-4">
                 <div class="max-w-4xl w-full mx-auto">
                     <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-4 sm:p-7 text-left shadow-2xl space-y-2.5 sm:space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed">                    
                         펌프 잇 업 라이즈의 게임 플레이가 키보드를 기반으로 진행이 되는데 키보드로 누르기에는 키가 작은 감이 있습니다.
@@ -142,9 +142,8 @@
             </section>
 
             <!-- SECTION 3: 주요 기능 -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#0d121f] flex-shrink-0 pt-4 pb-4">
+            <section class="w-[14.2857%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#0d121f] flex-shrink-0 pt-4 pb-4">
                 <div class="max-w-3xl w-full mx-auto">
-                    <!-- Single stacked list structure -->
                     <div class="flex flex-col space-y-2 max-h-[75vh] overflow-y-auto no-scrollbar pr-1">
                         <!-- Feature 1 -->
                         <div class="bg-[#111827] border border-slate-800/80 hover:border-cyan-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
@@ -211,7 +210,7 @@
                             </p>
                         </div>
 
-                        <!-- Feature 6: 맞춤 키 설정 -->
+                        <!-- Feature 6 -->
                         <div class="bg-[#111827] border border-slate-800/80 hover:border-indigo-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
                             <div class="flex items-center space-x-3 mb-1">
                                 <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xs sm:text-sm font-black">
@@ -224,7 +223,7 @@
                             </p>
                         </div>
 
-                        <!-- Feature 7: 라이즈 전용 키패드 -->
+                        <!-- Feature 7 -->
                         <div class="bg-[#111827] border border-slate-800/80 hover:border-rose-500/50 rounded-2xl p-3 transition duration-300 shadow-lg">
                             <div class="flex items-center space-x-3 mb-1">
                                 <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 text-xs sm:text-sm font-black">
@@ -241,7 +240,7 @@
             </section>
 
             <!-- SECTION 4: 세부 기능 -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#0b0f19] flex-shrink-0 pt-4 pb-4">
+            <section class="w-[14.2857%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#0b0f19] flex-shrink-0 pt-4 pb-4">
                 <div class="max-w-3xl w-full mx-auto">
                     <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-4 sm:p-7 text-left shadow-2xl space-y-2 text-slate-300 text-[11px] sm:text-sm leading-relaxed max-h-[75vh] overflow-y-auto no-scrollbar pr-1">
                         <ul class="space-y-2">
@@ -303,9 +302,8 @@
             </section>
 
             <!-- SECTION 5: 미리보기 이미지 (34 Images) -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0 pt-4 pb-4">
+            <section class="w-[14.2857%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0 pt-4 pb-4">
                 <div class="max-w-2xl w-full mx-auto">
-                    <!-- Carousel Wrapper without background board container -->
                     <div id="carouselContainer" class="w-full relative flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px]">
                         <!-- Carousel Items (34 Images) -->
                         <div class="carousel-item w-full flex flex-col items-center justify-center transition-all duration-300" data-index="0">
@@ -567,7 +565,7 @@
             </section>
 
             <!-- SECTION 6: 빠른 실행 가이드 -->
-            <section class="w-[16.666667%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0 pt-4 pb-4">
+            <section class="w-[14.2857%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#090d16] flex-shrink-0 pt-4 pb-4">
                 <div class="max-w-2xl w-full mx-auto">
                     <div class="flex flex-col space-y-2.5 max-h-[75vh] overflow-y-auto no-scrollbar pr-1">
                         <!-- Step 1 -->
@@ -621,6 +619,65 @@
                 </div>
             </section>
 
+            <!-- SECTION 7: 다운로드 -->
+            <section class="w-[14.2857%] h-full flex items-start justify-center px-4 overflow-y-auto no-scrollbar bg-[#0d121f] flex-shrink-0 pt-4 pb-4">
+                <div class="max-w-3xl w-full mx-auto space-y-4">
+                    <!-- PC Receiver Download Card -->
+                    <div class="bg-[#111827] border border-slate-800/80 hover:border-cyan-500/50 rounded-3xl p-4 sm:p-6 shadow-xl transition">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-base sm:text-lg font-black shrink-0">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <h3 class="text-sm sm:text-lg font-bold text-white">- 펌프티콘 PC 리시버 다운로드 -</h3>
+                        </div>
+                        <ul class="text-slate-300 text-[11px] sm:text-xs space-y-1.5 mb-4 pl-1">
+                            <li class="flex items-start space-x-2">
+                                <span class="text-cyan-400 font-bold">•</span>
+                                <span>설치 사양 : 윈도우 기반 스팀 펌프 잇 업 라이즈 실행이 가능한 모든 PC 및 노트북.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-cyan-400 font-bold">•</span>
+                                <span>모바일과 동일한 공유기를 통한 인터넷 연결 필수.</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-col items-center pt-2 border-t border-slate-800/80 space-y-2">
+                            <button class="w-full py-2.5 sm:py-3 px-4 rounded-2xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 transition shadow-lg">
+                                <i class="fa-solid fa-download"></i>
+                                <span>펌프티콘 PC 리시버 다운로드</span>
+                            </button>
+                            <span class="text-slate-400 text-[11px] sm:text-xs font-medium">다운로드 파일 준비 중</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile App Download Card -->
+                    <div class="bg-[#111827] border border-slate-800/80 hover:border-emerald-500/50 rounded-3xl p-4 sm:p-6 shadow-xl transition">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-base sm:text-lg font-black shrink-0">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <h3 class="text-sm sm:text-lg font-bold text-white">- 펌프티콘 모바일 앱 다운로드 -</h3>
+                        </div>
+                        <ul class="text-slate-300 text-[11px] sm:text-xs space-y-1.5 mb-4 pl-1">
+                            <li class="flex items-start space-x-2">
+                                <span class="text-emerald-400 font-bold">•</span>
+                                <span>설치 사양 : 안드로이드 7 이상 스마트폰 또는 태블릿 PC (안드로이드 10 이상을 권장.)</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-emerald-400 font-bold">•</span>
+                                <span>PC와 동일한 공유기를 통한 인터넷 연결 필수.</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-col items-center pt-2 border-t border-slate-800/80 space-y-2">
+                            <button class="w-full py-2.5 sm:py-3 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 transition shadow-lg">
+                                <i class="fa-solid fa-download"></i>
+                                <span>펌프티콘 모바일 앱 다운로드</span>
+                            </button>
+                            <span class="text-slate-400 text-[11px] sm:text-xs font-medium">다운로드 파일 준비 중</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
     </main>
@@ -638,7 +695,7 @@
             </button>
             
             <div id="sectionIndicator" class="text-slate-300 font-bold text-xs sm:text-sm tracking-wider w-20 text-center">
-                1 / 6 
+                1 / 7 
             </div>
 
             <button onclick="nextSection()" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-cyan-600 text-white flex items-center justify-center transition shadow-lg text-xs">
@@ -666,14 +723,15 @@
     <script>
         // Full Section Horizontal Slider Logic
         let currentSectionIndex = 0;
-        const totalSections = 6;
+        const totalSections = 7;
         const sectionTitles = [
             "1. 펌프티콘은?",
             "2. 개발 스토리",
             "3. 주요 기능",
             "4. 세부 기능",
             "5. 미리보기 이미지",
-            "6. 빠른 실행 가이드"
+            "6. 빠른 실행 가이드",
+            "7. 다운로드"
         ];
 
         function goToSection(index) {
@@ -702,9 +760,9 @@
             const navButtons = document.querySelectorAll('.nav-btn');
             navButtons.forEach((btn, idx) => {
                 if (idx === currentSectionIndex) {
-                    btn.className = "nav-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 text-cyan-400 bg-cyan-500/10 border border-cyan-500/30";
+                    btn.className = "nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-cyan-400 bg-cyan-500/10 border border-cyan-500/30 whitespace-nowrap";
                 } else {
-                    btn.className = "nav-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800";
+                    btn.className = "nav-btn px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-300 text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap";
                 }
             });
         }
@@ -802,7 +860,6 @@
                 const diffX = touchEndX - touchStartX;
                 const diffY = touchEndY - touchStartY;
 
-                // Check if horizontal swipe is greater than vertical swipe
                 if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) >= minSwipeDistance) {
                     if (diffX > 0) {
                         prevSection();
@@ -813,7 +870,6 @@
             }, { passive: true });
         }
 
-        // Mouse drag support for desktop testing
         let isMouseDown = false;
         let mouseStartX = 0;
         let mouseStartY = 0;
@@ -842,7 +898,6 @@
             });
         }
 
-        // Keyboard navigation (Arrow keys for sections, ESC for lightbox)
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeLightbox();
