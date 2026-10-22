@@ -1,6 +1,6 @@
 {
   "mobile": {
-    "latestVersion": "CBT10",
+    "latestVersion": "CBT9",
     "releaseDate": "2026-10-22",
     "title": "모바일 앱 업데이트 안내",
     "notes": [
@@ -10,7 +10,7 @@
     "downloadUrl": "새로운 리시버(Moripae CBT10.exe)는 구글 드라이브에서 다운로드 바람."
   },
   "windows": {
-    "latestVersion": "CBT4",
+    "latestVersion": "CBT3",
     "releaseDate": "2026-10-22",
     "title": "PC 리시버 업데이트 안내",
     "notes": [
