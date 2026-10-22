@@ -1,0 +1,21 @@
+{
+  "mobile": {
+    "latestVersion": "CBT10",
+    "releaseDate": "2026-10-22",
+    "title": "모바일 앱 업데이트 안내",
+    "notes": [
+      "수동 진동 설정 추가.",
+      "하프 모드 물리 키 입력 오류 수정."
+    ],
+    "downloadUrl": "새로운 리시버(Moripae CBT10.exe)는 구글 드라이브에서 다운로드 바람."
+  },
+  "windows": {
+    "latestVersion": "CBT4",
+    "releaseDate": "2026-10-22",
+    "title": "PC 리시버 업데이트 안내",
+    "notes": [
+      "연결 불안정 시 눌린 키 즉시 해제.",
+    ],
+    "downloadUrl": "새로운 리시버(Moripae Receiver CBT4.exe)는 구글 드라이브에서 다운로드 바람."
+  }
+}
