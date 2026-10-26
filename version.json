@@ -4,7 +4,7 @@
     "install": "Moripae CBT13.apk 파일을 기존 버전에 업데이트로 설치.",
     "releases": [
       {
-        "version": "CBT13",
+        "version": "CBT14",
         "releaseDate": "2026-10-26",
         "title": "모바일 앱 업데이트 안내",
         "notes": [
@@ -28,7 +28,7 @@
     "install": "기존 파일 삭제 후 Moripae Receiver CBT4.exe 다운로드 재실행.",
     "releases": [
       {
-        "version": "CBT4",
+        "version": "CBT5",
         "releaseDate": "2026-10-25",
         "title": "PC 리시버 업데이트 안내",
         "notes": [
