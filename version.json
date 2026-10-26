@@ -1,7 +1,7 @@
 {
   "mobile": {
     "latestVersion": "CBT13",
-    "install": "기존 Moripae CBT13.apk 버전 업데이트로 설치.",
+    "install": "Moripae CBT13.apk 파일을 기존 버전에 업데이트로 설치.",
     "releases": [
       {
         "version": "CBT13",
