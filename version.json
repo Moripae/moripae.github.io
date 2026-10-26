@@ -1,7 +1,7 @@
 {
   "mobile": {
     "latestVersion": "CBT13",
-    "install": "기존 Moripae CBT13.apk 버전 업데이트로 설치",
+    "install": "기존 Moripae CBT13.apk 버전 업데이트로 설치.",
     "releases": [
       {
         "version": "CBT13",
@@ -25,7 +25,7 @@
   },
   "receiver": {
     "latestVersion": "CBT4",
-    "install": "파일 삭제 후 Moripae Receiver CBT4.exe 다운로드 재실행.",
+    "install": "기존 파일 삭제 후 Moripae Receiver CBT4.exe 다운로드 재실행.",
     "releases": [
       {
         "version": "CBT4",
