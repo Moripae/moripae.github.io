@@ -1,48 +1,38 @@
 {
   "mobile": {
-    "latestVersion": "CBT14",
+    "latestVersion": "CBT13",
+    "Install": "기존 Moripae CBT13.apk 버전 업데이트로 설치",
     "releases": [
+      {
+        "version": "CBT13",
+        "releaseDate": "2026-10-26",
+        "title": "모바일 앱 업데이트 안내",
+        "notes": [
+          "업데이트 알림 창 수정."
+        ],
+        "downloadUrl": ""
+      },
       {
         "version": "CBT12",
         "releaseDate": "2026-10-25",
         "title": "모바일 앱 업데이트 안내",
         "notes": [
-          "컨트롤러 설정 페이지 화면 표시 오류 수정.",
-          "설치 : 기존 Moripae CBT12.exe 버전 업데이트로 설치."
-        ],
-        "downloadUrl": ""
-      },
-      {
-        "version": "CBT14",
-        "releaseDate": "2026-10-23",
-        "title": "모바일 앱 업데이트 안내",
-        "notes": [
-          "컨트롤러 연결 안정성 개선.",
-          "일부 화면 여백 오류 수정."
+          "컨트롤러 설정 창 화면 오류 수정."
         ],
         "downloadUrl": ""
       }
     ]
   },
   "receiver": {
-    "latestVersion": "CBT10",
+    "latestVersion": "CBT4",
+    "Install": "파일 삭제 후 Moripae Receiver CBT4.exe 다운로드 재실행.",
     "releases": [
       {
-        "version": "CBT10",
+        "version": "CBT4",
         "releaseDate": "2026-10-25",
         "title": "PC 리시버 업데이트 안내",
         "notes": [
-          "PC 리시버 연결 오류 수정.",
-          "설치 : 기존 (Moripae Receiver CBT4.exe) 파일 삭제 후 다운로드 재실행."
-        ],
-        "downloadUrl": ""
-      },
-      {
-        "version": "CBT9",
-        "releaseDate": "2026-10-23",
-        "title": "PC 리시버 업데이트 안내",
-        "notes": [
-          "키 입력 처리 안정성 개선."
+          "PC 리시버 연결 오류 수정."
         ],
         "downloadUrl": ""
       }
