@@ -1,10 +1,10 @@
 {
   "mobile": {
-    "latestVersion": "CBT13",
+    "latestVersion": "CBT14",
     "install": "Moripae CBT14.apk 파일을 기존 버전에 업데이트로 설치.",
     "releases": [
       {
-        "version": "CBT13",
+        "version": "CBT14",
         "releaseDate": "2026-10-30",
         "title": "모바일 앱 업데이트 안내",
         "notes": [
