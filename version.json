@@ -38,7 +38,7 @@
     ]
   },
   "receiver": {
-    "latestVersion": "CBT5",
+    "latestVersion": "CBT4",
     "install": "기존 파일 삭제 후 Moripae Receiver CBT4.exe 다운로드 재실행.",
     "releases": [
       {
