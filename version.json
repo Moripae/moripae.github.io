@@ -1,8 +1,17 @@
 {
   "mobile": {
-    "latestVersion": "CBT14",
-    "install": "Moripae CBT14.apk 파일을 기존 버전에 업데이트로 설치.",
+    "latestVersion": "CBT15",
+    "install": "Moripae CBT15.apk 파일을 기존 버전에 업데이트로 설치.",
     "releases": [
+      {
+        "version": "CBT15",
+        "releaseDate": "2026-10-31",
+        "title": "모바일 앱 업데이트 안내",
+        "notes": [
+          "6키 / 10키 컨트롤러 버튼 사이 간격 수정."
+        ],
+        "downloadUrl": ""
+      },
       {
         "version": "CBT14",
         "releaseDate": "2026-10-30",
