@@ -1,8 +1,19 @@
 {
   "mobile": {
-    "latestVersion": "CBT15",
-    "install": "Moripae CBT15.apk 파일을 기존 버전에 업데이트로 설치.",
+    "latestVersion": "CBT16",
+    "install": "Moripae CBT16.apk 파일을 기존 버전에 업데이트로 설치.",
     "releases": [
+      {
+        "version": "CBT16",
+        "releaseDate": "2026-11-01",
+        "title": "모바일 앱 업데이트 안내",
+        "notes": [
+          "내부 키 순서 변경.",
+          "키 설정 창 화면 버튼 배치 변경.",
+          "내부 키 순서가 변경됨에 따라 키 설정 및 이미지 등록 새로 해야함."
+        ],
+        "downloadUrl": ""
+      },
       {
         "version": "CBT15",
         "releaseDate": "2026-10-31",
@@ -45,9 +56,19 @@
     ]
   },
   "receiver": {
-    "latestVersion": "CBT4",
-    "install": "기존 파일 삭제 후 Moripae Receiver CBT4.exe 다운로드 재실행.",
+    "latestVersion": "CBT5",
+    "install": "기존 파일 삭제 후 Moripae Receiver CBT5.exe 다운로드 재실행.",
     "releases": [
+      {
+        "version": "CBT5",
+        "releaseDate": "2026-11-01",
+        "title": "PC 리시버 업데이트 안내",
+        "notes": [
+          "내부 키 순서 변경.",
+          "버튼 테스트 창 화면 버튼 배치 변경."
+        ],
+        "downloadUrl": ""
+      },
       {
         "version": "CBT4",
         "releaseDate": "2026-10-25",
