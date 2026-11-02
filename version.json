@@ -1,8 +1,18 @@
 {
   "mobile": {
-    "latestVersion": "CBT16",
-    "install": "Moripae CBT16.apk 파일을 기존 버전에 업데이트로 설치.",
+    "latestVersion": "CBT17",
+    "install": "Moripae CBT17.apk 파일을 기존 버전에 업데이트로 설치.",
     "releases": [
+      {
+        "version": "CBT17",
+        "releaseDate": "2026-11-02",
+        "title": "모바일 앱 업데이트 안내",
+        "notes": [
+          "키 설정 창 키패드 변경.",
+          "메뉴키 원하는 대로 변경 가능.(길게 누르면 기존 키값 삭제.)"
+        ],
+        "downloadUrl": ""
+      },
       {
         "version": "CBT16",
         "releaseDate": "2026-11-01",
@@ -56,9 +66,19 @@
     ]
   },
   "receiver": {
-    "latestVersion": "CBT5",
-    "install": "기존 파일 삭제 후 Moripae Receiver CBT5.exe 다운로드 재실행.",
+    "latestVersion": "CBT6",
+    "install": "기존 파일 삭제 후 Moripae Receiver CBT6.exe 다운로드 재실행.",
     "releases": [
+      {
+        "version": "CBT6",
+        "releaseDate": "2026-11-02",
+        "title": "PC 리시버 업데이트 안내",
+        "notes": [
+          "새로운 키패드 관련 업데이트."
+        ],
+        "downloadUrl": ""
+      },
+
       {
         "version": "CBT5",
         "releaseDate": "2026-11-01",
