@@ -1,8 +1,20 @@
 {
   "mobile": {
     "latestVersion": "CBT18",
-    "install": "Moripae CBT18.apk 파일을 기존 버전에 업데이트로 설치.",
+    "install": "Moripae CBT19.apk 파일을 기존 버전에 업데이트로 설치.",
     "releases": [
+      {
+        "version": "CBT19",
+        "releaseDate": "2026-11-05",
+        "title": "모바일 앱 업데이트 안내",
+        "notes": [
+          "컨트롤러 설정에서 키 설정 메뉴를 삭제.",
+          "컨트롤러 설정에 모리패 소개 메뉴 추가.",
+          "키 설정 방식을 컨트롤러 화면과 동일한 화면을 사용한 방식으 변경.(모드 선택 후에 수정하고 싶은 버전을 길게 누름.)",
+          "버튼 아이콘 변경 추가.(기본 아이콘 포함 60개의 아이콘 중 선택.)"
+        ],
+        "downloadUrl": ""
+      },
       {
         "version": "CBT18",
         "releaseDate": "2026-11-03",
