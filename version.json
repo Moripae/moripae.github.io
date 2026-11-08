@@ -1,9 +1,18 @@
 {
   "mobile": {
-    "latestVersion": "CBT20",
-    "install": "Moripae CBT20.apk 파일을 기존 버전에 업데이트로 설치.",
+    "latestVersion": "CBT21",
+    "install": "Moripae CBT21.apk 파일을 기존 버전에 업데이트로 설치.",
     "releases": [
       {
+        "version": "CBT21",
+        "releaseDate": "2026-11-06",
+        "title": "모바일 앱 업데이트 안내",
+        "notes": [
+          "키설정 모드에서 변경 값이 컨트롤러에 반영 안되는 오류 수정.",
+          "메뉴키 방향키 색상 오류 수정."
+        ],
+        "downloadUrl": ""
+      },
         "version": "CBT20",
         "releaseDate": "2026-11-06",
         "title": "모바일 앱 업데이트 안내",
